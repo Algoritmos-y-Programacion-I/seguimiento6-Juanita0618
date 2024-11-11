@@ -4,12 +4,13 @@ public class Species {
 
 	private String name;
 	private String scientificName;
+	private SpeciesType type;
 
-	public Species(String name, String scientificName) {
+	public Species(String name, String scientificName, SpeciesType type) {
 
 		this.name = name;
 		this.scientificName = scientificName;
-
+		this.type = type;
 	}
 
 	public String getName() {
@@ -28,4 +29,11 @@ public class Species {
 		this.scientificName = scientificName;
 	}
 
+	public SpeciesType getType() {
+		return type;
+	}
+
+	public void setType(SpeciesType type) {
+		this.type = type;
+	}
 }
